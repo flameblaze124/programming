@@ -1,0 +1,134 @@
+﻿<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title> Ultimo Real Estate </title>
+
+    <meta name="author" content="      ADD YOUR NAME AND YOUR EMAIL ADDRESS HERE     ">
+
+    <link rel="stylesheet" href="ultimo_real_estate.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+
+
+        <header>
+            <img src="images/ultimo_real_estate_logo.png" width="625" height="160" alt="Ultimo Real Estate, Sydney, Australia">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="property.html">Property of the Week</a></li>
+                <li><a href="buy_sell_rent.html">Buy-Sell-Rent</a></li>
+                <li><a href="agents.html">Agents</a></li>
+                <li><a href="suburb_profile.html">Suburb Profile</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html" id="current">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <section id="col1">
+                <h1>Property Enquiry</h1>
+                <div class="form-container">
+                    <form name="contact-form" action="" method="post" onsubmit="return validateForm()">
+                        <div>
+                            <label For="name"> Name </label>
+                            <input id="name" name="name" type="text" placeholder="Your Name" /> <br>
+                        </div>
+                        <div>
+                            <label for="phone">Mobile</label>
+                            <input type="tel" id="phone" name="phone" placeholder="0476-678-346" pattern="[0-9]{4}[0-9]{3}[0-9]{3}">
+
+                        </div>
+
+                        <div>
+                            <label For="email"> Email </label>
+                            <input id="email" name="email" type="email" placeholder="you@domain.com" /><br>
+                        </div>
+                        <div>
+                            <label For="question">Do you want to Buy or Sell Or Rent?</label><br> Buy: <input id="question" name="question" type="radio" /> Sell: <input id="question" name="question" type="radio" /> Rent: <input id="question" name="question"
+                                type="radio" />
+                        </div>
+
+                        <div>
+                            <label For="question2">What property types are interested in?</label><br> Unit: <input id="question2" name="question2" type="checkbox" /> Townhall: <input id="question2" name="question2" type="checkbox" /> House: <input id="question2"
+                                name="question2" type="checkbox" />
+                        </div>
+
+                        <div>
+                            <label>How many bedrooms do you require? <label><br>
+                  <input id="bedrooms" name='bedrooms' type="number" />
+            </div>
+
+            <div>
+              <label For="message"> Comments </label><br>
+                            <textarea id="message" row="5" cols="24" placeholder="Hi, how is it going"> </textarea>
+                            <input type="submit" value="Submit">
+                        </div>
+                </div>
+                <script src="contact.js"></script>
+                </form>
+                <h1>Contact</h1>
+
+                <ul>
+                    <li><strong>Ultimo Real Estate</strong></li>
+                    <li>20 Jones Street</li>
+                    <li>ULTIMO NSW 2007</li>
+                </ul>
+
+
+                <ul>
+                    <li><strong>Mob: +61 123 456 789</strong></li>
+                    <li>Tel: +612 1234 5678</li>
+                    <li>info@ultimorealestate.com.au</li>
+                </ul>
+
+
+
+
+            </section>
+
+            <section id="col2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6624.85817291638!2d151.19285829205285!3d-33.87860141454631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae2f6b3e5fb7%3A0xf97500fd5776ca34!2sJones%20St%2C%20Sydney%20NSW!5e0!3m2!1sen!2sau!4v1581408180870!5m2!1sen!2sau"
+                    width="570" height="500" allowfullscreen=""></iframe>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+            <ul>
+                <li>&copy; Ultimo Real Estate 20xx</li>
+                <li>
+                    <a href="www.facebook.com/UltimoRealEstate"><img src="images/facebook.png" width="30" height="30" alt="Ultimo Real Estate on Facebook"></a>
+                </li>
+                <li>
+                    <a href="www.instagram.com/UltimoRealEstate"><img src="images/instagram.png" width="30" height="30" alt="Ultimo Real Estate on Instagram"></a>
+                </li>
+                <li>
+                    <a href="www.twitter.com/UltimoRealEstate"><img src="images/twitter.png" width="30" height="30" alt="Ultimo Real Estate on Twitter"></a>
+                </li>
+                <li><a href="legals.html">Legals</a></li>
+            </ul>
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
