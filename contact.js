@@ -15,5 +15,20 @@ function validateForm() {
     if (email == "") {
         alert("Email need be filled out");
         return false;
+    } else {
+        return validateEmail(email);
+    }
+
+    if (form_checked == true) {
+        alert("thank you visting hope you a nice day")
+    }
+}
+
+function validateEmail(value) {
+    if (/^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(value)) {
+        return true;
+    } else {
+        alert('You have entered an invalid email address.')
+        return false;
     }
 }
